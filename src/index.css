@@ -1,0 +1,183 @@
+html {
+    margin: auto;
+    padding: 0;
+    background: #f5f7fb;
+    min-width: 300px;
+}
+
+body {
+    color: #293264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Karla;
+    margin: 0;
+    padding: 1em;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*########## START COMPONENT ##########*/
+.start {
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start-main-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.start-sub-title {
+    font-family: "inter", sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.start-btn {
+    border: none;
+    border-radius: 15px;
+    background: #4d5b9e;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em 5em;
+}
+
+/*########## QUESTION COMPONENT ##########*/
+.questions {
+    max-width: 720px;
+}
+
+.questions-title {
+    font-size: 1.45em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.questions-divider {
+    margin: 2em 0;
+}
+
+.answer-button {
+    background: #f5f7fb;
+    border-radius: 7.71px;
+    border: 0.771px solid #4d5b9e;
+    color: #293264;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.25em 1em;
+    margin: 0.5em;
+}
+
+.selected {
+    border: 1px solid transparent;
+    background: #d6dbf5;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-answers-btn {
+    background-color: #4d5b9e;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: auto;
+}
+
+.score-container {
+    justify-content: center;
+    margin: auto;
+    gap: 2em;
+    align-items: center;
+}
+
+.score-count {
+    font-family: Inter;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*########## UTILITY/MISC ##########*/
+.flex {
+    display: flex;
+}
+
+.green {
+    background: #94D7A2;
+    border: 1px solid transparent;
+}
+
+.red {
+    background: #F8BCBC;
+    border: 1px solid transparent;
+}
+
+.opaque {
+    opacity: 0.7;
+}
+
+.blob-top-right {
+    position: fixed;
+    top: -20%;
+    right: -20%;
+    z-index: -1;
+}
+
+.blob-bottom-left {
+    position: fixed;
+    bottom: -20%;
+    left: -20%;
+    z-index: -1;
+}
+
+/*########## MEDIA QUERIES ##########*/
+@media (min-width: 320px) {
+    .blob-top-right {
+        top: -15%;
+        right: -15%;
+    }
+
+    .blob-bottom-left {
+        bottom: -15%;
+        left: -15%;
+    }
+}
+
+@media (min-width: 768px) {
+    .blob-top-right {
+        top: -10%;
+        right: -10%;
+    }
+
+    .blob-bottom-left {
+        bottom: -10%;
+        left: -10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blob-top-right {
+        top: -5%;
+        right: -5%;
+    }
+
+    .blob-bottom-left {
+        bottom: -5%;
+        left: -5%;
+    }
+}
